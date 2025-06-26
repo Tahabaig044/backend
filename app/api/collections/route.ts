@@ -8,9 +8,6 @@ export const POST = async (req: NextRequest) => {
   try {
     const { userId } = auth()
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 403 })
-    }
 
     await connectToDB()
 
