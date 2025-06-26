@@ -73,11 +73,11 @@ export const DELETE = async (
   { params }: { params: { collectionId: string } }
 ) => {
   try {
-    const { userId } = auth();
+    // const { userId } = auth();
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
+    // if (!userId) {
+    //   return new NextResponse("Unauthorized", { status: 401 });
+    // }
 
     await connectToDB();
 
