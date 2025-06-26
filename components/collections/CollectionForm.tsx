@@ -151,3 +151,4 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
 };
 
 export default CollectionForm;
+
